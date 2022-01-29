@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        body{
+            background: rgb(197, 198, 198);
+            padding: 20px;
+        }
+
+
+        .title{
+            margin-top: 2em;
+            margin-left: 50%;
+            padding: 0;
+            display: block;
+            position: relative;
+            text-align: center;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 20px;
+            border-right: 3px solid;
+            overflow: hidden;
+            animation: typing 4s steps(15) infinite, blink .75s infinite;
+            font-weight: 600;
+            color: green;
+        }
+
+        @keyframes typing {
+            from { 
+                width: 0% 
+            }
+            to { 
+                width: 150px 
+            }
+        }
+        @keyframes blink {
+        from, to { 
+            border-color: transparent 
+        }
+            50% { 
+            border-color: black; 
+         }
+        }
+
+        .title span:nth-child(odd){
+            animation-delay: 2s;
+        }
+
+        /* @keyframes delay{
+            0%{
+                visibility: hidden;
+                color: aqua;
+            }
+        
+            100%{
+                visibility: visible;
+            }
+        } */
+
+        .header{
+            font-size: 80px;
+            font-weight: 600;
+            font-family: 'Moo Lah Lah', cursive;
+            text-align: center;
+            margin-top: 1em;
+            color: green;
+        }
+        .search{
+           display: flex;
+           justify-content: center;
+        padding-left:  0 20%;
+           
+        }
+
+        .search input{
+            width: 60%;
+            height: 35px;
+            padding: 0 20px;
+            border: 1px solid #f6f6f6;
+            outline: none;
+            border-radius: 10px 0px 0px 10px;
+            font-size: 15px;
+            color: rgb(42, 40, 40);
+        }
+
+        .search input:focus{
+            border: 2px solid green;
+        }
+
+        .search a{
+            background: green;
+            opacity: 0.6;
+            margin: 0 4px;
+            padding: 10px;
+            display: flex;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0px 10px 10px 0px;
+            transition: .5s ease;
+        }
+
+        .search a:hover {
+            opacity: 1;
+            
+        }
+
+        .search a:hover i{
+            color: #fff;
+        }
+
+        
+
+        .search a i{
+            color: #fff;
+        }
+
+        .icons{
+            display: flex;
+            justify-content: center;
+            margin-top:3.5em;
+        }
+
+        .icons a{
+            background: green;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 10px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icons a i{
+            color: #fff;
+            font-size: 20px;
+            transition: .4s ease-in;
+        }
+
+        .icons a:hover{
+            box-shadow: 0 0 50px green;
+        }
+
+        .icons a:hover i{
+            animation: icons 1s infinite;
+        }
+
+        @keyframes icons{
+            0%{
+                transform: rotate(0deg);
+                color: cyan;
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .yt-search{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           align-items: center;
+           margin-top: 3em;
+        }
+        .yt-search input{
+            width: 25em;
+            height: 24px;
+            border: 1px solid green;
+            border-radius: 12px;
+            padding: 5px 20px;
+            display: block;
+            outline: none;
+        }
+
+        .yt-search a{
+            display: block;
+            text-decoration: none;
+        }
+
+        .yt-search i{
+            /* background-color: green; */
+            /* padding: 15px; */
+            margin-left: -25px;
+            border-radius: 100%;
+            margin: 10px 0;
+            display: block;
+            color: red;
+            font-size: 40px;
+            margin-top: -10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="title">
+        VALENTIN...
+    </div>
+    <header class="header">
+        " DUSH "
+    </header>
+
+    <div class="search">
+        <input type="text" placeholder="Type to search . . ."><a href=""><i class="fas fa-search"></i></a>
+    </div>
+
+    <div class="icons">
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.github.com"><i class="fab fa-github"></i></a>
+    </div>
+
+
+    <div class="yt-search">
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <input type="text" placeholder="Search youtube" >        
+    </div>
+
+    <!-- <div class="download">
+        
+        <input type="text" placeholder="Search youtube" >        
+    </div> -->
+    
+
+    <script>
+        const query = document.querySelector('.search input');
+        const btn = document.querySelector('.search a')
+
+        // Google search redirect
+
+        btn.onclick = ()=>{
+            window.open(`https://www.google.com/search?q=${query.value}`)
+        }
+
+        query.addEventListener('keyup', (event)=>{
+            if(event.key === 'Enter'){
+                window.open(`https://www.google.com/search?q=${query.value}`)
+            }
+        })
+
+        //YOUTUBE search redirect
+
+        const tyQuery = document.querySelector('.yt-search input')
+        const tyBtn = document.querySelector('.yt-search a')
+
+        tyBtn.onclick = ()=>{
+
+            window.open('https://www.youtube.com/results?search_query=' + tyQuery.value)
+        }
+
+        tyQuery.addEventListener('keyup', (event)=>{
+            if(event.key === 'Enter'){
+                window.open('https://www.youtube.com/results?search_query=' + tyQuery.value )
+            }
+        })
+
+
+    </script>
+    
+    
+</body>
+</html>
