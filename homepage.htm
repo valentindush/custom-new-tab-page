@@ -269,6 +269,12 @@
                 window.open('https://www.youtube.com/results?search_query=' + tyQuery.value )
             }
         })
+        
+        tyQuery.addEventListener('keyup', (event)=>{
+            if(event.key === 'Shift'){
+                window.open('https://www.youtube.com/results?search_query=' + tyQuery.value )
+            }
+        })
 
 
     </script>
